@@ -9,8 +9,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Untitled Document</title>
-<link href="boilerplate.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="../../../../xampp/htdocs/PixsellEye/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="../../../../xampp/htdocs/PixsellEye/css/style.css" rel="stylesheet" type="text/css">
 <!-- 
 To learn more about the conditional comments around the html tags at the top of the file:
 paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
@@ -24,9 +24,9 @@ Do the following if you're using your customized build of modernizr (http://www.
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<script src="respond.min.js"></script>
+<script src="../../../../xampp/htdocs/PixsellEye/respond.min.js"></script>
 </head>
-<body>
+<body><center>
 <div class="gridContainer">
   <div id="LayoutDiv1"><form action="" method="get" name="registration_form">
   </form>
@@ -74,7 +74,7 @@ Do the following if you're using your customized build of modernizr (http://www.
 
 </style>
 
-<link type="text/css" rel="stylesheet" href="https://secure.jotform.me/themes/CSS/548b1325700cc48d318b4567.css?session=47219318528448&themeRevisionID=54f55884977cdfb0268b4567"/>
+<link type="text/css" rel="stylesheet" href="https://secure.jotform.me/themes/CSS/548b1325700cc48d318b4567.css?session=47219406378705&themeRevisionID=54f55884977cdfb0268b4567"/>
 <style type="text/css" id="form-designer-style">
     /* Injected CSS Code */
 @import "https://fonts.googleapis.com/css?family=Muli:light,lightitalic,normal,italic,bold,bolditalic|Muli:light,lightitalic,normal,italic,bold,bolditalic";
@@ -473,6 +473,21 @@ Do the following if you're using your customized build of modernizr (http://www.
 }
 .form-line {
   padding: 12px 36px;
+}
+.form-all {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.form-section:first-child {
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+}
+.form-section:last-child {
+  -webkit-border-radius: 0 0 20px 20px;
+  -moz-border-radius: 0 0 20px 20px;
+  border-radius: 0 0 20px 20px;
 }
 .form-all .qq-upload-button,
 .form-all .form-submit-button,
@@ -1460,9 +1475,9 @@ li[data-type="control_image"] img {
           </span>
         </div>
       </li>
-      <li class="form-line" data-type="control_widget" id="id_36">
-        <label class="form-label form-label-left form-label-auto" id="label_36" for="input_36">  </label>
-        <div id="cid_36" class="form-input jf-required">
+      <li class="form-line form-line-column form-col-1" data-type="control_widget" id="id_36">
+        <label class="form-label form-label-top" id="label_36" for="input_36">  </label>
+        <div id="cid_36" class="form-input-wide jf-required">
           <div style="width:100%; text-align:Left;">
             <iframe onload="widgetFrameLoaded(36)" frameborder="0" scrolling="no" allowTransparency="true" class="custom-field-frame" id="customFieldFrame_36" src="" style="border:none;width:516px; height: 442px;">
             </iframe>
@@ -1482,7 +1497,7 @@ li[data-type="control_image"] img {
           </div>
         </div>
       </li>
-      <li class="form-line form-line-column form-col-1" data-type="control_button" id="id_34">
+      <li class="form-line form-line-column form-col-2" data-type="control_button" id="id_34">
         <div id="cid_34" class="form-input-wide">
           <div style="margin-left:156px" class="form-buttons-wrapper">
             <button id="input_34" type="submit" class="form-submit-button">
@@ -1491,12 +1506,7 @@ li[data-type="control_image"] img {
           </div>
         </div>
       </li>
-      <li class="form-line" data-type="control_image" id="id_42">
-        <div id="cid_42" class="form-input-wide">
-          <img alt="" class="form-image" border="0" src="http://www.jotform.com/images/logo.png" height="55" width="164" />
-        </div>
-      </li>
-      <li class="form-line form-line-column form-col-1" data-type="control_button" id="id_35">
+      <li class="form-line form-line-column form-col-3" data-type="control_button" id="id_35">
         <div id="cid_35" class="form-input-wide">
           <div style="text-align:left" class="form-buttons-wrapper">
             <button id="input_35" type="submit" class="form-submit-button">
@@ -1519,6 +1529,6 @@ li[data-type="control_image"] img {
   </script>
   <script src="https://d2g9qbzl5h49rh.cloudfront.net/js/widgetResizer.js?REV=3.2.7010" type="text/javascript"></script>
 </form>
-</div>
+</div></center>
 </body>
 </html>

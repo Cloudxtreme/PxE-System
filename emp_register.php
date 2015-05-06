@@ -9,8 +9,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Untitled Document</title>
-<link href="boilerplate.css" rel="stylesheet" type="text/css">
-<link href="file:///C|/xampp/htdocs/PixsellEye/css/style.css" rel="stylesheet" type="text/css">
+<link href="../../../../xampp/htdocs/PixsellEye/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="../../../../xampp/htdocs/PixsellEye/css/style.css" rel="stylesheet" type="text/css">
 <!-- 
 To learn more about the conditional comments around the html tags at the top of the file:
 paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
@@ -24,12 +24,15 @@ Do the following if you're using your customized build of modernizr (http://www.
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<script src="file:///C|/Program%20Files%20(x86)/Adobe/Adobe%20Dreamweaver%20CS6/Configuration/BuiltIn/Fluid%20Grid%20Layout/respond.min.js"></script>
+<script src="../../../../xampp/htdocs/PixsellEye/respond.min.js"></script>
 </head>
 <body>
-<div class="gridContainer clearfix">
-<script src="https://d2g9qbzl5h49rh.cloudfront.net/static/prototype.forms.js" type="text/javascript"></script>
-<script src="https://d2g9qbzl5h49rh.cloudfront.net/static/jotform.forms.js?3.2.6993" type="text/javascript"></script>
+<div class="gridContainer">
+  <div id="LayoutDiv1"><form action="" method="get" name="registration_form">
+  </form>
+  </div>
+  <script src="https://d2g9qbzl5h49rh.cloudfront.net/static/prototype.forms.js" type="text/javascript"></script>
+<script src="https://d2g9qbzl5h49rh.cloudfront.net/static/jotform.forms.js?3.2.7010" type="text/javascript"></script>
 <script src="https://js.jotform.com/vendor/postMessage.min.js" type="text/javascript"></script>
 <script src="https://js.jotform.com/WidgetsServer.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -45,9 +48,9 @@ Do the following if you're using your customized build of modernizr (http://www.
       JotForm.onSubmissionError="jumpToSubmit";
    });
 </script>
-<link href="https://d2g9qbzl5h49rh.cloudfront.net/static/formCss.css?3.2.6993" rel="stylesheet" type="text/css" />
-<link type="text/css" rel="stylesheet" href="https://d2g9qbzl5h49rh.cloudfront.net/css/styles/nova.css?3.2.6993" />
-<link type="text/css" media="print" rel="stylesheet" href="https://d2g9qbzl5h49rh.cloudfront.net/css/printForm.css?3.2.6993" />
+<link href="https://d2g9qbzl5h49rh.cloudfront.net/static/formCss.css?3.2.7010" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="https://d2g9qbzl5h49rh.cloudfront.net/css/styles/nova.css?3.2.7010" />
+<link type="text/css" media="print" rel="stylesheet" href="https://d2g9qbzl5h49rh.cloudfront.net/css/printForm.css?3.2.7010" />
 <style type="text/css">
     .form-label-left{
         width:150px !important;
@@ -60,7 +63,7 @@ Do the following if you're using your customized build of modernizr (http://www.
         width:150px !important;
     }
     .form-all{
-        width:690px;
+        width:833px;
         color:#555 !important;
         font-family:'Muli';
         font-size:15px;
@@ -71,15 +74,17 @@ Do the following if you're using your customized build of modernizr (http://www.
 
 </style>
 
-<link type="text/css" rel="stylesheet" href="https://secure.jotform.me/themes/CSS/548b1325700cc48d318b4567.css?session=47216908967250&themeRevisionID=54f55884977cdfb0268b4567"/>
+<link type="text/css" rel="stylesheet" href="https://secure.jotform.me/themes/CSS/548b1325700cc48d318b4567.css?session=47219417295402&themeRevisionID=54f55884977cdfb0268b4567"/>
 <style type="text/css" id="form-designer-style">
     /* Injected CSS Code */
-@import "https://fonts.googleapis.com/css?family=Muli:light,lightitalic,normal,italic,bold,bolditalic";
+@import "https://fonts.googleapis.com/css?family=Muli:light,lightitalic,normal,italic,bold,bolditalic|Muli:light,lightitalic,normal,italic,bold,bolditalic";
 .form-all {
   font-family: "Muli", sans-serif;
 }
 .form-all {
-  width: 690px;
+  width: 833px;
+  width: 100%;
+  max-width: 833px;
 }
 .form-label-left,
 .form-label-right {
@@ -121,7 +126,7 @@ Do the following if you're using your customized build of modernizr (http://www.
 }
 .supernova {
   background-color: #4e4e4e;
-  background-color: #4895d9;
+  background-color: #ffffff;
 }
 .supernova body {
   background-color: transparent;
@@ -134,7 +139,7 @@ Do the following if you're using your customized build of modernizr (http://www.
 /* | */
 @media screen and (min-width: 480px) {
   .supernova .form-all {
-    border: 1px solid #297cc5;
+    border: 1px solid #e6e6e6;
     -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
@@ -469,6 +474,21 @@ Do the following if you're using your customized build of modernizr (http://www.
 .form-line {
   padding: 12px 36px;
 }
+.form-all {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.form-section:first-child {
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+}
+.form-section:last-child {
+  -webkit-border-radius: 0 0 20px 20px;
+  -moz-border-radius: 0 0 20px 20px;
+  border-radius: 0 0 20px 20px;
+}
 .form-all .qq-upload-button,
 .form-all .form-submit-button,
 .form-all .form-submit-reset,
@@ -494,11 +514,9 @@ Do the following if you're using your customized build of modernizr (http://www.
 */
 h2.form-header {
   line-height: 1.618em;
-  font-size: 1.714em;
 }
 h2 ~ .form-subHeader {
   line-height: 1.5em;
-  font-size: 1.071em;
 }
 .form-header-group {
   text-align: center;
@@ -716,7 +734,7 @@ h2 ~ .form-subHeader {
 }
 .form-header-group .form-header,
 .form-header-group .form-subHeader {
-  color: #fafafa;
+  color: #ffffff;
 }
 .form-header-group {
   background-color: rgba(255, 255, 255, 0);
@@ -733,7 +751,7 @@ h2 ~ .form-subHeader {
 .form-checkbox-other-input,
 .form-captcha input,
 .form-spinner input {
-  background-color: #f6f6f6;
+  background-color: #3e3e3e;
 }
 .form-textbox,
 .form-textarea {
@@ -1026,43 +1044,63 @@ li[data-type="control_image"] img {
 
 <form class="jotform-form" action="https://submit.jotform.me/submit/51241642693454/" method="post" enctype="multipart/form-data" name="form_51241642693454" id="51241642693454" accept-charset="utf-8">
   <input type="hidden" name="formID" value="51241642693454" />
-  <div class="form-all">
+ <center> <div class="form-all">
     <ul class="form-section page-section">
       <li id="cid_28" class="form-input-wide" data-type="control_head">
         <div class="form-header-group">
           <div class="header-text httac htvam">
-            <h2 id="header_28" class="form-header">
+            <h3 id="header_28" class="form-header">
               PixselleEye Employee Registration Form
-            </h2>
+            </h3>
           </div>
         </div>
       </li>
-      <li class="form-line" data-type="control_textbox" id="id_30">
-        <label class="form-label form-label-left form-label-auto" id="label_30" for="input_30"> Employee ID </label>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_30">
+        <label class="form-label form-label-left form-label-auto" id="label_30" for="input_30">
+          Employee ID
+          <span class="form-required">
+            *
+          </span>
+        </label>
         <div id="cid_30" class="form-input jf-required">
-          <input type="text" class=" form-textbox validate[Numeric]" data-type="input-textbox" id="input_30" name="q30_employeeId" size="20" value="" />
+          <input type="text" class=" form-textbox validate[required, Numeric]" data-type="input-textbox" id="input_30" name="q30_employeeId" size="20" value="" />
         </div>
       </li>
-      <li class="form-line" data-type="control_textbox" id="id_31">
-        <label class="form-label form-label-left form-label-auto" id="label_31" for="input_31"> Department ID </label>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_31">
+        <label class="form-label form-label-left form-label-auto" id="label_31" for="input_31">
+          Department ID
+          <span class="form-required">
+            *
+          </span>
+        </label>
         <div id="cid_31" class="form-input jf-required">
-          <input type="text" class=" form-textbox validate[Numeric]" data-type="input-textbox" id="input_31" name="q31_departmentId" size="20" value="" />
+          <input type="text" class=" form-textbox validate[required, Numeric]" data-type="input-textbox" id="input_31" name="q31_departmentId" size="20" value="" />
         </div>
       </li>
-      <li class="form-line" data-type="control_textbox" id="id_41">
-        <label class="form-label form-label-left form-label-auto" id="label_41" for="input_41"> Full Name </label>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_41">
+        <label class="form-label form-label-left form-label-auto" id="label_41" for="input_41">
+          Full Name
+          <span class="form-required">
+            *
+          </span>
+        </label>
         <div id="cid_41" class="form-input jf-required">
-          <input type="text" class=" form-textbox validate[AlphaNumeric]" data-type="input-textbox" id="input_41" name="q41_fullName" size="20" value="" />
+          <input type="text" class=" form-textbox validate[required, AlphaNumeric]" data-type="input-textbox" id="input_41" name="q41_fullName" size="20" value="" />
         </div>
       </li>
-      <li class="form-line" data-type="control_address" id="id_5">
-        <label class="form-label form-label-left form-label-auto" id="label_5" for="input_5"> Address </label>
+      <li class="form-line jf-required" data-type="control_address" id="id_5">
+        <label class="form-label form-label-left form-label-auto" id="label_5" for="input_5">
+          Address
+          <span class="form-required">
+            *
+          </span>
+        </label>
         <div id="cid_5" class="form-input jf-required">
           <table summary="" undefined class="form-address-table" border="0" cellpadding="0" cellspacing="0">
             <tr>
               <td colspan="2">
                 <span class="form-sub-label-container" style="vertical-align: top">
-                  <input class="form-textbox form-address-line" type="text" name="q5_address[addr_line1]" id="input_5_addr_line1" />
+                  <input class="form-textbox validate[required] form-address-line" type="text" name="q5_address[addr_line1]" id="input_5_addr_line1" />
                   <label class="form-sub-label" for="input_5_addr_line1" id="sublabel_5_addr_line1" style="min-height: 13px;"> Street Address </label>
                 </span>
               </td>
@@ -1078,27 +1116,27 @@ li[data-type="control_image"] img {
             <tr>
               <td width="50%">
                 <span class="form-sub-label-container" style="vertical-align: top">
-                  <input class="form-textbox form-address-city" type="text" name="q5_address[city]" id="input_5_city" size="21" />
+                  <input class="form-textbox validate[required] form-address-city" type="text" name="q5_address[city]" id="input_5_city" size="21" />
                   <label class="form-sub-label" for="input_5_city" id="sublabel_5_city" style="min-height: 13px;"> City </label>
                 </span>
               </td>
               <td>
                 <span class="form-sub-label-container" style="vertical-align: top">
-                  <input class="form-textbox form-address-state" type="text" name="q5_address[state]" id="input_5_state" size="22" />
+                  <input class="form-textbox validate[required] form-address-state" type="text" name="q5_address[state]" id="input_5_state" size="22" />
                   <label class="form-sub-label" for="input_5_state" id="sublabel_5_state" style="min-height: 13px;"> State / Province </label>
                 </span>
               </td>
             </tr>
             <tr>
-              <td width="50%" function zip(){var iterator=Prototype.K,args=$A(arguments);if(Object.isFunction(args.last())) iterator=args.pop();var collections=[this].concat(args).map($A);return this.map(function(value,index){return iterator(collections.pluck(index));});}>
+              <td width="50%" style="display: none;">
                 <span class="form-sub-label-container" style="vertical-align: top">
-                  <input class="form-textbox form-address-postal" type="text" name="q5_address[postal]" id="input_5_postal" size="10" />
+                  <input class="form-textbox validate[required] form-address-postal" type="text" name="q5_address[postal]" id="input_5_postal" size="10" />
                   <label class="form-sub-label" for="input_5_postal" id="sublabel_5_postal" style="min-height: 13px;"> Postal / Zip Code </label>
                 </span>
               </td>
               <td>
                 <span class="form-sub-label-container" style="vertical-align: top">
-                  <select class="form-dropdown form-address-country" defaultcountry="" name="q5_address[country]" id="input_5_country">
+                  <select class="form-dropdown validate[required] form-address-country" defaultcountry="" name="q5_address[country]" id="input_5_country">
                     <option value="" selected> Please Select </option>
                     <option value="United States"> United States </option>
                     <option value="Afghanistan"> Afghanistan </option>
@@ -1173,7 +1211,6 @@ li[data-type="control_image"] img {
                     <option value="France"> France </option>
                     <option value="French Polynesia"> French Polynesia </option>
                     <option value="Gabon"> Gabon </option>
-
                     <option value="The Gambia"> The Gambia </option>
                     <option value="Georgia"> Georgia </option>
                     <option value="Germany"> Germany </option>
@@ -1405,10 +1442,15 @@ li[data-type="control_image"] img {
           </div>
         </div>
       </li>
-      <li class="form-line" data-type="control_textbox" id="id_39">
-        <label class="form-label form-label-left form-label-auto" id="label_39" for="input_39"> Contact Number </label>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_39">
+        <label class="form-label form-label-left form-label-auto" id="label_39" for="input_39">
+          Contact Number
+          <span class="form-required">
+            *
+          </span>
+        </label>
         <div id="cid_39" class="form-input jf-required">
-          <input type="text" class=" form-textbox validate[Numeric]" data-type="input-textbox" id="input_39" name="q39_contactNumber" size="20" value="" />
+          <input type="text" class=" form-textbox validate[required, Numeric]" data-type="input-textbox" id="input_39" name="q39_contactNumber" size="20" value="" />
         </div>
       </li>
       <li class="form-line" data-type="control_email" id="id_10">
@@ -1433,15 +1475,15 @@ li[data-type="control_image"] img {
           </span>
         </div>
       </li>
-      <li class="form-line" data-type="control_widget" id="id_36">
-        <div id="cid_36" class="form-input jf-required">
+      <li class="form-line form-line-column form-col-1" data-type="control_widget" id="id_36">
+        <iframe onload="widgetFrameLoaded(36)" frameborder="0" scrolling="no" allowtransparency="true" class="custom-field-frame" id="customFieldFrame_36" src="" style="border:none;width:516px; height: 442px;"> </iframe>
+        <label class="form-label form-label-top" id="label_36" for="input_36">  </label>
+        <div id="cid_36" class="form-input-wide jf-required">
           <div style="width:100%; text-align:Left;">
-            <iframe onload="widgetFrameLoaded(36)" frameborder="0" scrolling="no" allowTransparency="true" class="custom-field-frame" id="customFieldFrame_36" src="" style="border:none;width:516px; height: 442px;">
-            </iframe>
             <div class="widget-inputs-wrapper">
-              <input id="input_36" class="form-hidden form-widget" type="hidden" name="q36_clickTo36" value="">
+              <input id="input_36" class="form-hidden form-widget" type="hidden" name="q36_input36" value="">
               <input id="widget_settings_36" class="form-hidden form-widget-settings" type="hidden" value="">
-            </div>
+          </div>
             <script>
             setTimeout(function()
 {
@@ -1452,9 +1494,9 @@ li[data-type="control_image"] img {
 }, 5);
             </script>
           </div>
-      </div>
+        </div>
       </li>
-      <li class="form-line form-line-column form-col-1" data-type="control_button" id="id_34">
+      <li class="form-line form-line-column form-col-2" data-type="control_button" id="id_34">
         <div id="cid_34" class="form-input-wide">
           <div style="margin-left:156px" class="form-buttons-wrapper">
             <button id="input_34" type="submit" class="form-submit-button">
@@ -1463,7 +1505,7 @@ li[data-type="control_image"] img {
           </div>
         </div>
       </li>
-      <li class="form-line form-line-column form-col-2" data-type="control_button" id="id_35">
+      <li class="form-line form-line-column form-col-3" data-type="control_button" id="id_35">
         <div id="cid_35" class="form-input-wide">
           <div style="text-align:left" class="form-buttons-wrapper">
             <button id="input_35" type="submit" class="form-submit-button">
@@ -1479,12 +1521,12 @@ li[data-type="control_image"] img {
         <input type="text" name="website" value="" />
       </li>
     </ul>
-  </div>
+  </div></center>
   <input type="hidden" id="simple_spc" name="simple_spc" value="51241642693454" />
   <script type="text/javascript">
   document.getElementById("si" + "mple" + "_spc").value = "51241642693454-51241642693454";
   </script>
-  <script src="https://d2g9qbzl5h49rh.cloudfront.net/js/widgetResizer.js?REV=3.2.6993" type="text/javascript"></script>
+  <script src="https://d2g9qbzl5h49rh.cloudfront.net/js/widgetResizer.js?REV=3.2.7010" type="text/javascript"></script>
 </form>
 </div>
 </body>
